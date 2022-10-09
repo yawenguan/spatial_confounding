@@ -1,31 +1,28 @@
-# spatial_confounding
-Code for paper A spectral adjustment for spatial confounding
+# Code for paper A spectral adjustment for spatial confounding
 
-This folder contains R-scripts and other files that were employed to carry out simulation studies and data analysis described in the paper
+This repository contains R-scripts and other files that were employed to carry out simulation studies and data analysis described in the paper "A Spectral Adjustment for Spatial Confounding" 
 
-"A Spectral Adjustment for Spatial Confounding" 
-
-First install all required R packages 
+## First install all required R packages 
 	source("load_packages.R")
-  To produce all tables and figures in the manuscript and supplementary materials. 
+###  To produce all tables and figures in the manuscript and supplementary materials. 
 	source("code_sec5_discretesim_summarize.R")
 	source("code_sec5_contsim_summarize.R")
 	source("code_sec6_realdata.R")
-  To run discrete and continuous simulation study.  
+###  To run discrete and continuous simulation study.  
 	source("code_sec5_discretesim.R")
 	source("code_sec5_contsim.R")
-  To run data analysis in Section 6. 
+###  To run data analysis in Section 6. 
 	source("code_sec6_realdata.R")
 
-A brief description of the files follows
+## A brief description of the files follows
 Simulation Study in Section 5 of the paper
-  0. load_packages.R - install all necessary R packages.
+  
   1. code_sec5_discretesim.R - executes the discrete-case simulation study (~50 min)
-	* To save time, this script simulates two data sets for each scenario in Table 1.
-	* For each simulated data set, four methods are compared:
+	(1). To save time, this script simulates two data sets for each scenario in Table 1.
+	(2). For each simulated data set, four methods are compared:
 	     	** the standard Leroux, parametric, semiparametric-PCP and semiparametric-R2
-	* The actual simulation study (500 replicates) is performed on a high performance computer (~48hrs per scenario)
-	* outputs are saved in folder 'DiscreteSim'
+	(3). The actual simulation study (500 replicates) is performed on a high performance computer (~48hrs per scenario)
+	(4). outputs are saved in folder 'DiscreteSim'
   2. code_sec5_discretesim_summarize.R - organizes output generated from 'code_sec5_discretesim.R'
 	* This R script creates Table 1, Fig2 and Fig3 in the manuscript 
 	* and Fig1 in the supplementary material 
