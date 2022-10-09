@@ -18,11 +18,10 @@ This repository contains R-scripts and other files that were employed to carry o
 Simulation Study in Section 5 of the paper
   
   1. code_sec5_discretesim.R - executes the discrete-case simulation study (~50 min)
-	(1). To save time, this script simulates two data sets for each scenario in Table 1.
-	(2). For each simulated data set, four methods are compared:
-	     	** the standard Leroux, parametric, semiparametric-PCP and semiparametric-R2
-	(3). The actual simulation study (500 replicates) is performed on a high performance computer (~48hrs per scenario)
-	(4). outputs are saved in folder 'DiscreteSim'
+  	a. To save time, this script simulates two data sets for each scenario in Table 1.
+	For each simulated data set, four methods are compared: the standard Leroux, parametric, semiparametric-PCP and semiparametric-R2
+	The actual simulation study (500 replicates) is performed on a high performance computer (~48hrs per scenario)
+	outputs are saved in folder 'DiscreteSim'
   2. code_sec5_discretesim_summarize.R - organizes output generated from 'code_sec5_discretesim.R'
 	* This R script creates Table 1, Fig2 and Fig3 in the manuscript 
 	* and Fig1 in the supplementary material 
