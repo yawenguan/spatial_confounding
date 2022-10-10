@@ -1,5 +1,6 @@
 # package required for running the code
 install.packages("INLA",repos=c(getOption("repos"),INLA="https://inla.r-inla-download.org/R/stable"), dep=TRUE)
+install.packages("RandomFieldsUtils")
 packageurl <- "https://cran.r-project.org/src/contrib/Archive/RandomFields/RandomFields_3.3.14.tar.gz"
 install.packages(packageurl, repos=NULL)
 
